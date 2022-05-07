@@ -11,9 +11,9 @@ function clamp(n: number): number {
 export function Dial(initial: number, bounds: [number, number], text?: string, dialColor: string = "red", textColor: string="white"){
     const element = document.createElement("canvas");
     element.classList.add("dial");
-    const w = element.width = 70;
+    const w = element.width = 55;
     const h = element.height = 50;
-    const size = 20;
+    const size = 15;
     const g = element.getContext("2d") as CanvasRenderingContext2D;
     let normalizedValue = 0.5;
     let previousNormalisedValue = 0.5;
